@@ -1,0 +1,1 @@
+sphinx3_decode -cepdir ../feat -ctl ../etc/open_test.fileids -hyp hypo_open_test_phoneme-ci -logfn open.phoneme-ci.log 	-dict ../etc/open.sampa.dic -fdict  ../etc/open.filler -lm ../etc/open.lm.DMP -hmm  ../model_parameters/open.ci_cont  -wip 0.2 -lw 2 

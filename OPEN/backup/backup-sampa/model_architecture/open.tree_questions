@@ -1,0 +1,67 @@
+WDBNDRY_B
+WDBNDRY_E
+WDBNDRY_S
+WDBNDRY_I
+SILENCE   SIL
+QUESTION0_0_R  ? UU b c d h k kh l p ph r s t th v
+QUESTION0_1_R  h k kh p ph s t th
+QUESTION0_2_R  kh s
+QUESTION0_3_R  h k p ph t th
+QUESTION0_4_R  k p ph th
+QUESTION0_5_R  k ph th
+QUESTION0_6_R  ph th
+QUESTION0_7_R  h t
+QUESTION0_8_R  ? UU b c d l r v
+QUESTION0_9_R  ? UU l r v
+QUESTION0_10_R  ? l r v
+QUESTION0_11_R  b c d
+QUESTION0_12_R  b d
+QUESTION0_13_R  1 @ AA EE J NN OO a e i m n o u y
+QUESTION0_14_R  @ AA J NN e m n o u y
+QUESTION0_15_R  @ AA e o u
+QUESTION0_16_R  J NN m n y
+QUESTION0_17_R  J NN m n
+QUESTION0_18_R  J NN n
+QUESTION0_19_R  J NN
+QUESTION0_20_R  1 EE OO a i
+QUESTION0  a b c d k kh l p ph r s th u
+QUESTION1  a b c d l r th u
+QUESTION2  k kh p ph s
+QUESTION3  kh
+QUESTION4  k p ph s
+QUESTION5  p s
+QUESTION6  k ph
+QUESTION7  1 ? @ AA EE J NN OO UU e h i m n o t v y
+QUESTION8  1 OO i o y
+QUESTION9  ? @ AA EE J NN UU e h m n t v
+QUESTION10  ? @ AA EE UU e v
+QUESTION11  ? AA UU v
+QUESTION12  ? UU v
+QUESTION13  ? UU
+QUESTION14  @ EE e
+QUESTION15  J NN h m n t
+QUESTION16  h t
+QUESTION17  J NN m n
+QUESTION18  J m n
+QUESTION19  J m
+QUESTION2_0_L  1 ? AA J NN e h i l m n t y
+QUESTION2_1_L  1 J e i l y
+QUESTION2_2_L  e l
+QUESTION2_3_L  1 J i y
+QUESTION2_4_L  1 i
+QUESTION2_5_L  J y
+QUESTION2_6_L  ? AA NN h m n t
+QUESTION2_7_L  h t
+QUESTION2_8_L  ? AA NN m n
+QUESTION2_9_L  ? NN m n
+QUESTION2_10_L  ? n
+QUESTION2_11_L  NN m
+QUESTION2_12_L  @ EE OO UU a b c d k kh o p ph r s th u v
+QUESTION2_13_L  c kh
+QUESTION2_14_L  @ EE OO UU a b d k o p ph r s th u v
+QUESTION2_15_L  d k p ph r s u
+QUESTION2_16_L  @ EE OO UU a b o th v
+QUESTION2_17_L  @ EE b th v
+QUESTION2_18_L  b th
+QUESTION2_19_L  @ EE v
+QUESTION2_20_L  OO UU a o

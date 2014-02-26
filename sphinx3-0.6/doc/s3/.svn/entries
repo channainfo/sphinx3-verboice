@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5533"
+   name=""
+   committed-date="2006-04-28T20:08:37.950504Z"
+   url="https://svn.sourceforge.net/svnroot/cmusphinx/trunk/sphinx3/doc/s3"
+   last-author="egouvea"
+   kind="dir"
+   uuid="c60273ff-4a12-0410-8d58-82ceea6d4170"
+   repos="https://svn.sourceforge.net/svnroot/cmusphinx"
+   revision="5957"/>
+<entry
+   committed-rev="3879"
+   name="feat.fig"
+   text-time="2006-06-05T05:33:06.000000Z"
+   committed-date="2004-09-11T05:02:37.000000Z"
+   checksum="4434e62b8dadcc13498c2d3bf257d1cf"
+   last-author="arthchan2003"
+   kind="file"
+   prop-time="2006-06-05T05:33:06.000000Z"/>
+<entry
+   committed-rev="5533"
+   name="feat.gif"
+   text-time="2006-06-05T05:33:06.000000Z"
+   committed-date="2006-04-28T20:08:37.950504Z"
+   checksum="3769c97d0245d8a28355aea407fe3a4a"
+   last-author="egouvea"
+   kind="file"
+   prop-time="2006-06-05T05:33:06.000000Z"/>
+<entry
+   committed-rev="3879"
+   name="falign.fig"
+   text-time="2006-06-05T05:33:06.000000Z"
+   committed-date="2004-09-11T05:02:37.000000Z"
+   checksum="edfd4b732a4e6d6cdcf4aad74408edca"
+   last-author="arthchan2003"
+   kind="file"
+   prop-time="2006-06-05T05:33:06.000000Z"/>
+<entry
+   committed-rev="5533"
+   name="falign.gif"
+   text-time="2006-06-05T05:33:06.000000Z"
+   committed-date="2006-04-28T20:08:37.950504Z"
+   checksum="58661b7b4b34423f7b92b435967279a8"
+   last-author="egouvea"
+   kind="file"
+   prop-time="2006-06-05T05:33:06.000000Z"/>
+<entry
+   committed-rev="3879"
+   name="hypseg.txt"
+   text-time="2006-06-05T05:33:06.000000Z"
+   committed-date="2004-09-11T05:02:37.000000Z"
+   checksum="47033861c2f6ed7955d961e44b7c9c3e"
+   last-author="arthchan2003"
+   kind="file"
+   prop-time="2006-06-05T05:33:06.000000Z"/>
+</wc-entries>

@@ -1,0 +1,38 @@
+INFO: cmd_ln.c(291): Command line:
+sphinx3_decode \
+	-cepdir ../feat \
+	-ctl ../etc/open_test.fileids \
+	-hyp hypo_open_test_phoneme-200 \
+	-logfn open.phoneme-cd-200-0.log \
+	-dict ../etc/open.sampa.dic \
+	-fdict ../etc/open.filler \
+	-lm ../etc/open.lm.DMP \
+	-hmm ../model_parameters/open.cd_cont_200 \
+	-wip 0.2 \
+	-lw 2 
+
+INFO: kbcore.c(456): Begin Initialization of Core Models:
+INFO: logs3.c(151): Initializing logbase: 1.000300e+00 (add table: 1)
+INFO:	Initialization of the log add table
+INFO:	Log-Add table size = 29350
+INFO:	
+INFO: feat.c(692): Initializing feature stream to type: '1s_c_d_dd', CMN='current', VARNORM='no', AGC='none'
+INFO: kbcore.c(486): .cont.
+INFO:	Initialization of feat_t, report:
+INFO:	Feature type        = 1s_c_d_dd
+INFO:	Cepstral size       = 13
+INFO:	Cepstral size Used  = 13
+INFO:	Number of stream    = 1
+INFO:	Vector size of stream[0]: 39
+INFO:	Whether CMN is used = 1
+INFO:	Whether AGC is used = 0
+INFO:	Whether variance is normalized = 0
+INFO:	
+INFO:	Reading HMM in Sphinx 3 Model format
+INFO:	Model Definition File: ../model_parameters/open.cd_cont_200/mdef
+INFO:	Mean File: ../model_parameters/open.cd_cont_200/means
+INFO:	Variance File: ../model_parameters/open.cd_cont_200/variances
+INFO:	Mixture Weight File: ../model_parameters/open.cd_cont_200/mixture_weights
+INFO:	Transition Matrices File: ../model_parameters/open.cd_cont_200/transition_matrices
+INFO: mdef.c(673): Reading model definition: ../model_parameters/open.cd_cont_200/mdef
+FATAL_ERROR: "mdef.c", line 862: Unreferenced senone 117; cannot determine parent CIphone

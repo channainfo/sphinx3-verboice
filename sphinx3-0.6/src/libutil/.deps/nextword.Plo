@@ -1,0 +1,6 @@
+nextword.lo: nextword.c ../../include/nextword.h \
+ ../../include/prim_type.h
+
+../../include/nextword.h:
+
+../../include/prim_type.h:

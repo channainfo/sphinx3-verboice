@@ -1,0 +1,201 @@
+INFO: cmd_ln.c(291): Command line:
+sphinx3_decode \
+	-cepdir ./feat \
+	-ctl ../etc/test.fileids \
+	-hyp hypo_open_test_fake-graphem.f1 \
+	-logfn open_fake.graphem.f1.log \
+	-dict ../etc/open.grapheme.dic \
+	-fdict ../etc/open.filler \
+	-lm ../etc/open.lm.DMP \
+	-hmm ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4 \
+	-wip 0.2 \
+	-lw 2 \
+	-outlatfmt 0 \
+	-latext SLF \
+	-outlatdir ./Out_lattice1 
+
+INFO: kbcore.c(456): Begin Initialization of Core Models:
+INFO: logs3.c(151): Initializing logbase: 1.000300e+00 (add table: 1)
+INFO:	Initialization of the log add table
+INFO:	Log-Add table size = 29350
+INFO:	
+INFO: feat.c(692): Initializing feature stream to type: '1s_c_d_dd', CMN='current', VARNORM='no', AGC='none'
+INFO: kbcore.c(486): .cont.
+INFO:	Initialization of feat_t, report:
+INFO:	Feature type        = 1s_c_d_dd
+INFO:	Cepstral size       = 13
+INFO:	Cepstral size Used  = 13
+INFO:	Number of stream    = 1
+INFO:	Vector size of stream[0]: 39
+INFO:	Whether CMN is used = 1
+INFO:	Whether AGC is used = 0
+INFO:	Whether variance is normalized = 0
+INFO:	
+INFO:	Reading HMM in Sphinx 3 Model format
+INFO:	Model Definition File: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/mdef
+INFO:	Mean File: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/means
+INFO:	Variance File: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/variances
+INFO:	Mixture Weight File: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/mixture_weights
+INFO:	Transition Matrices File: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/transition_matrices
+INFO: mdef.c(673): Reading model definition: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/mdef
+INFO:	Initialization of mdef_t, report:
+INFO:	48 CI-phone, 1430 CD-phone, 3 emitstate/phone, 144 CI-sen, 344 Sen, 157 Sen-Seq
+INFO:	
+INFO: kbcore.c(333): Using optimized GMM computation for Continuous HMM, -topn will be ignored
+INFO: cont_mgau.c(161): Reading mixture gaussian file '../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/means'
+INFO: cont_mgau.c(417): 344 mixture Gaussians, 4 components, 1 streams, veclen 39
+INFO: cont_mgau.c(161): Reading mixture gaussian file '../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/variances'
+INFO: cont_mgau.c(417): 344 mixture Gaussians, 4 components, 1 streams, veclen 39
+INFO: cont_mgau.c(509): Reading mixture weights file '../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/mixture_weights'
+INFO: cont_mgau.c(661): Read 344 x 4 mixture weights
+INFO: cont_mgau.c(689): Removing uninitialized Gaussian densities
+INFO: cont_mgau.c(780): Applying variance floor
+INFO: cont_mgau.c(798): 0 variance values floored
+INFO: cont_mgau.c(846): Precomputing Mahalanobis distance invariants
+INFO: tmat.c(167): Reading HMM transition probability matrices: ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/transition_matrices
+INFO:	Initialization of tmat_t, report:
+INFO:	Read 48 transition matrices of size 3x4
+INFO:	
+INFO: dict.c(463): Reading main dictionary: ../etc/open.grapheme.dic
+INFO: dict.c(466): 83 words read
+INFO: dict.c(471): Reading filler dictionary: ../etc/open.filler
+INFO: dict.c(474): 3 words read
+INFO:	Initialization of dict_t, report:
+INFO:	No of CI phone: 0
+INFO:	Max word: 4182
+INFO:	No of word: 86
+INFO:	
+INFO: lm.c(592): LM read('../etc/open.lm.DMP', lw= 2.00, wip= 0.20, uw= 0.70)
+INFO: lm.c(594): Reading LM file ../etc/open.lm.DMP (LM name "default")
+INFO: lm_3g_dmp.c(618): Reading LM in 16 bits format
+INFO: lm_3g_dmp.c(674): Read       85 unigrams [in memory]
+INFO: lm_3g_dmp.c(747):      166 bigrams [on disk]
+INFO: lm_3g_dmp.c(820):      247 bigrams [on disk]
+INFO: lm_3g_dmp.c(890):        4 bigram prob entries
+INFO: lm_3g_dmp.c(924):        5 trigram bowt entries
+INFO: lm_3g_dmp.c(955):        3 trigram prob entries
+INFO: lm_3g_dmp.c(986):        1 trigram segtable entries (512 segsize)
+INFO: lm_3g_dmp.c(1041):       85 word strings
+INFO: lm.c(685): The LM routine is operating at 16 bits mode
+INFO:	Initialization of fillpen_t, report:
+INFO:	Language weight =2.000000 
+INFO:	Word Insertion Penalty =0.200000 
+INFO:	Silence probability =0.100000 
+INFO:	Filler probability =0.100000 
+INFO:	
+INFO: dict2pid.c(567): Building PID tables for dictionary
+INFO:	Initialization of dict2pid_t, report:
+INFO:	Dict2pid is in composite triphone mode
+INFO:	125 composite states; 51 composite sseq
+INFO:	
+INFO: kbcore.c(645): Inside kbcore: Verifying models consistency ...... 
+INFO: kbcore.c(667): End of Initialization of Core Models:
+INFO:	Initialization of beam_t, report:
+INFO:	Parameters used in Beam Pruning of Viterbi Search:
+INFO:	Beam=-422133
+INFO:	PBeam=-383758
+INFO:	WBeam=-268630 (Skip=0)
+INFO:	WEndBeam=-614012 
+INFO:	No of CI Phone assumed=48 
+INFO:	
+INFO:	Initialization of fast_gmm_t, report:
+INFO:	Parameters used in Fast GMM computation:
+INFO:	   Frame-level: Down Sampling Ratio 1, Conditional Down Sampling? 0, Distance-based Down Sampling? 0
+INFO:	     GMM-level: CI phone beam -614012. MAX CD 100000
+INFO:	Gaussian-level: GS map would be used for Gaussian Selection? =1, SVQ would be used as Gaussian Score? =0 SubVQ Beam -19363
+INFO:	
+INFO:	Initialization of pl_t, report:
+INFO:	Parameters used in phoneme lookahead:
+INFO:	Phoneme look-ahead        type = 0
+INFO:	Phoneme look-ahead beam   size = 65945
+INFO:	No of CI Phones assumed=48 
+INFO:	
+INFO:	Initialization of ascr_t, report:
+INFO:	No. of CI senone =144 
+INFO:	No. of senone = 344
+INFO:	No. of composite senone = 125
+INFO:	No. of senone sequence = 157
+INFO:	No. of composite senone sequence=51 
+INFO:	Parameters used in phoneme lookahead:
+INFO:	Phoneme lookahead window = 1
+INFO:	
+INFO: vithist.c(167): Initializing Viterbi-history module
+INFO:	Initialization of vithist_t, report:
+INFO:	Word beam = -268630
+INFO:	Bigram Mode =0
+INFO:	Rescore Mode =1
+INFO:	Trace sil Mode =1
+INFO:	
+INFO: srch.c(447): Search Initialization. 
+WARNING: "srch_time_switch_tree.c", line 166: -Nstalextree is omitted in TST search.
+INFO: lextree.c(226): Creating Unigram Table for lm (name: default)
+INFO: lextree.c(239): Size of word table after unigram + words in class: 83.
+INFO: lextree.c(248): Size of word table after adding alternative prons: 83.
+INFO:	lextree_t, report:
+INFO:	Parameters of the lexical tree. 
+INFO:	Type of the tree 0 (0:unigram, 1: 2g, 2: 3g etc.)
+INFO:	Number of left contexts 22 
+INFO:	Number of node 452 
+INFO:	Number of links in the tree 552
+INFO:	The previous word for this tree  
+INFO:	The size of a node of the lexical tree 72 
+INFO:	The size of a gnode_t 16 
+INFO:	
+INFO: srch_time_switch_tree.c(226): Lextrees (0) for lm 0, its name is default, it has 452 nodes(ug)
+INFO: lextree.c(226): Creating Unigram Table for lm (name: default)
+INFO: lextree.c(239): Size of word table after unigram + words in class: 83.
+INFO: lextree.c(248): Size of word table after adding alternative prons: 83.
+INFO:	lextree_t, report:
+INFO:	Parameters of the lexical tree. 
+INFO:	Type of the tree 0 (0:unigram, 1: 2g, 2: 3g etc.)
+INFO:	Number of left contexts 22 
+INFO:	Number of node 452 
+INFO:	Number of links in the tree 552
+INFO:	The previous word for this tree  
+INFO:	The size of a node of the lexical tree 72 
+INFO:	The size of a gnode_t 16 
+INFO:	
+INFO: srch_time_switch_tree.c(226): Lextrees (1) for lm 0, its name is default, it has 452 nodes(ug)
+INFO: lextree.c(226): Creating Unigram Table for lm (name: default)
+INFO: lextree.c(239): Size of word table after unigram + words in class: 83.
+INFO: lextree.c(248): Size of word table after adding alternative prons: 83.
+INFO:	lextree_t, report:
+INFO:	Parameters of the lexical tree. 
+INFO:	Type of the tree 0 (0:unigram, 1: 2g, 2: 3g etc.)
+INFO:	Number of left contexts 22 
+INFO:	Number of node 452 
+INFO:	Number of links in the tree 552
+INFO:	The previous word for this tree  
+INFO:	The size of a node of the lexical tree 72 
+INFO:	The size of a gnode_t 16 
+INFO:	
+INFO: srch_time_switch_tree.c(226): Lextrees (2) for lm 0, its name is default, it has 452 nodes(ug)
+INFO: srch_time_switch_tree.c(233): Time for building trees, 0.0000 CPU 0.0007 Clk
+INFO: srch_time_switch_tree.c(256): Lextrees(0), 1 nodes(filler)
+INFO: srch_time_switch_tree.c(256): Lextrees(1), 1 nodes(filler)
+INFO: srch_time_switch_tree.c(256): Lextrees(2), 1 nodes(filler)
+INFO:	Initialization of srch_t, report:
+INFO:	Operation Mode = 4, Operation Name = OP_TST_DECODE
+INFO:	
+INFO: utt.c(136): Processing: test1
+INFO: feat.c(901): At directory ./feat
+INFO: feat.c(311): Reading mfc file: './feat/test1.mfc'[0..2147418112]
+
+.......
+Backtrace(test1)
+FV:test1>                 WORD  SFrm  EFrm AScr(UnNorm)    LMScore  AScr+LScr     AScale
+fv:test1>   កណ្ដាល     0    49      -938134     -34862    -972996    -197794 
+fv:test1>                <sil>    50    62      -350113     -20714    -370827     -99433 
+FV:test1>                TOTAL                 -1288247     -55576
+
+FWDVIT: កណ្ដាល (test1)
+FWDXCT: test1 S -221331 T -1275508 A -1288247 L 12739 0 -938134 -14749 កណ្ដាល 50 -350113 -7675 <sil> 63 0 -2310 </s> 63
+
+INFO: srch.c(1230): Writing lattice file: ./Out_lattice1/test1.SLF
+INFO: stat.c(154):   63 frm;   156 cdsen/fr,  144 cisen/fr,   624 cdgau/fr,   576 cigau/fr, Sen 0.01, CPU 0.01 Clk [Ovrhd 0.00 CPU 0.01 Clk];    322 hmm/fr,   9 wd/fr, Search: 0.01 CPU 0.00 Clk (test1)  
+INFO: fast_algo_struct.c(398): HMMHist[0..0](test1): 63(100)
+INFO: lm.c(944):      1844 tg(),      1738 tgcache,      102 bo;    28 fills,       13 in mem (5.2%)
+INFO: lm.c(948):      597 bg(),       92 bo;    14 fills,       96 in mem (57.5%)
+INFO: corpus.c(647): test1:    0.0 sec CPU,    0.1 sec Clk;  TOT:      0.0 sec CPU,      0.1 sec Clk
+
+INFO: stat.c(204): SUMMARY:  63 fr;  156 cdsen/fr, 144 cisen/fr, 624 cdgau/fr, 576 cigau/fr, 0.01 xCPU 0.01 xClk [Ovhrd 0.00 xCPU  0 xClk];  322 hmm/fr, 8 wd/fr, 0.01 xCPU 0.00 xClk;  tot: 0.03 xCPU, 0.11 xClk

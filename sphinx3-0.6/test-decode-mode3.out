@@ -1,0 +1,2 @@
+/usr/bin/ld: cannot open output file /home/chenseng/projects/verboice-git/script/InsteDD/sphinx3/sphinx3-0.6/src/programs/.libs/22824-lt-sphinx3_decode: Permission denied
+collect2: ld returned 1 exit status

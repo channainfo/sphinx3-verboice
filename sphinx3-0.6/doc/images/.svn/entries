@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5534"
+   name=""
+   committed-date="2006-04-28T22:03:41.411182Z"
+   url="https://svn.sourceforge.net/svnroot/cmusphinx/trunk/sphinx3/doc/images"
+   last-author="egouvea"
+   kind="dir"
+   uuid="c60273ff-4a12-0410-8d58-82ceea6d4170"
+   repos="https://svn.sourceforge.net/svnroot/cmusphinx"
+   revision="5957"/>
+<entry
+   committed-rev="5534"
+   name="rarrow.gif"
+   text-time="2006-06-05T05:33:09.000000Z"
+   committed-date="2006-04-28T22:03:41.411182Z"
+   checksum="80b1e052be33e6e5e7026e6f62c92fa4"
+   last-author="egouvea"
+   kind="file"
+   prop-time="2006-06-05T05:33:09.000000Z"/>
+<entry
+   committed-rev="267"
+   name="Makefile"
+   text-time="2006-06-05T05:33:09.000000Z"
+   committed-date="2001-12-11T04:40:56.000000Z"
+   checksum="7d3c8102d7be7590082d8be6013953b7"
+   last-author="lenzo"
+   kind="file"
+   prop-time="2006-06-05T05:33:09.000000Z"/>
+</wc-entries>

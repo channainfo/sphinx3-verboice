@@ -1,0 +1,19 @@
+rm ./wav/test1.wav
+rm ./feat/test1.mfc
+rm ./Out_lattice1/*.*
+rm ./Out_nbest1/*.*
+mkdir -p ./Out_lattice1
+mkdir -p ./Out_nbest1
+mkdir -p ./wav
+mkdir -p ./feat
+cp $1 ./wav/test1.wav
+echo 'test1' > ../etc/test.fileids
+./wave2feat -mswav 1 -dither yes -i ./wav/test1.wav -o ./feat/test1.mfc
+
+#sphinx3_decode -cepdir ./feat -ctl ../etc/test.fileids -hyp hypo_open_test_fake-graphem_nbest.1f  -logfn open_fake.graphem-nbest.1f.log 	-dict ../etc/open.grapheme.dic -fdict  ../etc/open.filler -lm ../etc/open.lm.DMP -hmm  ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4  -wip 0.2 -lw 2 
+
+sphinx3_decode -cepdir ./feat -ctl ../etc/test.fileids -hyp hypo_open_test_fake-graphem.f1 -logfn open_fake.graphem.f1.log 	-dict ../etc/open.grapheme.dic -fdict  ../etc/open.filler -lm ../etc/open.lm.DMP -hmm  ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4  -wip 0.2 -lw 2 -outlatfmt 0 -latext SLF -outlatdir ./Out_lattice1
+
+sphinx3_astar -ctl ../etc/test.fileids   -logfn open_fake.graphem-nbest.1f.log 	-dict ../etc/open.grapheme.dic -fdict  ../etc/open.filler -lm ../etc/open.lm.DMP  -mdef ../backup/backup-grapheme/model_parameters/open.cd_cont_200_4/mdef -latext SLF -inlatdir ./Out_lattice1 -nbest 5 -nbestext nbest -nbestdir ./Out_nbest1 -wip 0.2 -lw 2 
+cat ./Out_nbest1/test1.nbest
+
