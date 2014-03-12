@@ -1,0 +1,10 @@
+OPEN/decode/feat/*
+OPEN/decode/Out_lattice1/*
+OPEN/decode/Out_nbest1/*
+OPEN/decode/wav/*
+OPEN/decode/.libs/*
+OPEN/etc/*
+OPEN/decode/hypo_open_test_fake-graphem.f1
+OPEN/decode/open_fake.graphem.f1.log
+OPEN/decode/open_fake.graphem-nbest.1f.log
+

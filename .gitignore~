@@ -1,0 +1,9 @@
+OPEN/decode/*
+OPEN/decode/feat/*
+OPEN/decode/Out_lattice1
+OPEN/decode/Out_nbest1
+OPEN/decode/wav/*
+OPEN/decode/.libs/*
+OPEN/etc/*
+
+
