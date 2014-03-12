@@ -8,3 +8,21 @@ OPEN/decode/hypo_open_test_fake-graphem.f1
 OPEN/decode/open_fake.graphem.f1.log
 OPEN/decode/open_fake.graphem-nbest.1f.log
 
+# Object files
+*.o
+*.ko
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
